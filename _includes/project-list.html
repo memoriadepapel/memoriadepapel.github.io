@@ -1,9 +1,11 @@
+<!-- {% assign projects = site.pages | where: 'type', 'project' | sort: 'url' %} -->
 {% assign projects = site.pages | where: 'type', 'project' | sort: 'url' %}
+{% assign home_projects = projects | where: 'home', true %}
 
 {% if include.category.size > 0 %}
   {% assign filtered_projects = projects | where: 'category',include.category %}
 {% else %}
-  {% assign filtered_projects = projects %}
+  {% assign filtered_projects = home_projects %}
 {% endif %}
 
 {% if page.type == 'project' and filtered_projects.size > 1 %}

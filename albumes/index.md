@@ -1,12 +1,7 @@
 ---
 layout: default
-title: Álbumes
+title: Álbumes de fotos
 category: Álbumes
 ---
 
-Albumes de fotos para **todos tus recuerdos**.
-
-
-
-
-
+Albumes de fotos para todos tus recuerdos.
