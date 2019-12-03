@@ -1,15 +1,14 @@
-repository: kalanda/memoriadepapel.github.io
+repository: memoriadepapel/memoriadepapel.github.io
 
 # Site settings
 title: Memoria de Papel
 author: Memoria de Papel
 description: Artículos de papelería hechos a mano
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://memoriadepapel.com" # the base hostname & protocol for your site
+url: "http://memoriadepapel.github.io" # the base hostname & protocol for your site
 instagram: "https://instagram.com/memoria_de_papel"
 twitter: "https://twitter.com/memoria_depapel"
 facebook: "https://www.facebook.com/Memoriadepapel-773045782724933/"
-email: "memoriadepapel@outlook.com"
 
 # Build settings
 markdown: kramdown
