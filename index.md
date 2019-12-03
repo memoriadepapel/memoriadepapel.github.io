@@ -4,7 +4,7 @@ type: home
 title: Memoria de Papel
 ---
 
-**Memoria de Papel** son artículos de papelería hechos a mano
+**Memoria de Papel** son artículos de papelería hechos a mano.
 
 > "El que no tiene memoria, se hace una de papel” _Gabriel García Márquez_
 
