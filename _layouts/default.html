@@ -7,27 +7,25 @@
   {% capture filter_category %}{{ page.category }}{% endcapture %}
 
   <section class="section">
+
     {% if page.type != 'home' %}
       {% include breadcrumb.html %}
+      <h1 class="title">{{page.title}}</h1>
     {% endif %}
-    <h1 class="title">{{page.title}}</h1>
+
     <div class="content">
       {{ content }}
     </div>
-  </section>
 
-  {% if page.type != 'project' and page.type != 'page' %}
-    <section class="section">
+    {% if page.type != 'project' and page.type != 'page' %}
       {% include project-list.html category=filter_category %}
-    </section>
-  {% endif %}
+    {% endif %}
 
-  {% if page.type == 'project' %}
-    <section class="section">
+    {% if page.type == 'project' %}
       {% capture project %}{{ page.url }}{% endcapture %}
       {% include project-list.html category=filter_category current_project=project %}
-    </section>
-  {% endif %}
+    {% endif %}
+  </section>
 
   <!-- footer -->
   {% include footer.html %}

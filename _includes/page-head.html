@@ -2,9 +2,9 @@
 <html lang="es">
 <head>
 {% if page.type == 'home' %}
-  {% capture pageTitle %}{{ site.title | escape }}: {{ site.description | escape }}{% endcapture %}
+  {% capture pageTitle %}{{ site.title | escape }} | {{ site.description | escape }}{% endcapture %}
 {% else %}
-  {% capture pageTitle %}{{ page.title | escape }} | {{ site.title | escape }}{% endcapture %}
+  {% capture pageTitle %}{{ page.title | escape }} - {{ site.title | escape }}{% endcapture %}
 {% endif %}
 {% capture pageDescription %}{{ site.description }}{% endcapture %}
 <title>{{pageTitle}}</title>
