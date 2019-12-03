@@ -1,0 +1,36 @@
+{% include page-head.html %}
+<body>
+  <!-- header -->
+  {% include header.html %}
+
+  <!-- detail -->
+  {% capture filter_category %}{{ page.category }}{% endcapture %}
+
+  <section class="section">
+    {% if page.type != 'home' %}
+      {% include breadcrumb.html %}
+    {% endif %}
+    <h1 class="title">{{page.title}}</h1>
+    <div class="content">
+      {{ content }}
+    </div>
+  </section>
+
+  {% if page.type != 'project' and page.type != 'page' %}
+    <section class="section">
+      {% include project-list.html category=filter_category %}
+    </section>
+  {% endif %}
+
+  {% if page.type == 'project' %}
+    <section class="section">
+      {% capture project %}{{ page.url }}{% endcapture %}
+      {% include project-list.html category=filter_category current_project=project %}
+    </section>
+  {% endif %}
+
+  <!-- footer -->
+  {% include footer.html %}
+
+</body>
+</html>

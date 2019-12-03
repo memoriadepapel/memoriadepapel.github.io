@@ -1,0 +1,27 @@
+{% assign projects = site.pages | where: 'type', 'project' | sort: 'importance' %}
+{% if include.category.size > 0 %}
+  {% assign filtered_projects = projects | where: 'category',include.category %}
+{% else %}
+  {% assign filtered_projects = projects %}
+{% endif %}
+
+{% if page.type == 'project' and filtered_projects.size > 1 %}
+<h1 class="title">Más {{filter_category}}</h1>
+{% endif %}
+
+<div class="columns is-multiline">
+{% for project in filtered_projects reversed %}
+  <!-- project -->
+  {% if project.url != include.current_project %}
+    <div class="column is-one-third-desktop is-half-tablet">
+      <div class="card">
+        <a href="{{ site.baseurl }}{{ project.url }}" class="card-image">
+          <figure class="image is-3by2">
+            <img src="{{ site.baseurl }}{{ project.url }}cover.jpg" alt="{{ project.title }}">
+          </figure>
+        </a>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+</div>

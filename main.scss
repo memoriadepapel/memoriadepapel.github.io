@@ -1,0 +1,32 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+$family-sans-serif: "Montserrat", sans-serif;
+$content-blockquote-background-color: #FBF7C2;
+$content-blockquote-border-left: #CFCA86;
+
+@import 'bulma-0.8.0/bulma';
+
+.mdp-header {
+  text-align: center;
+  padding: 1em;
+  border-bottom: 1px solid lightgrey;
+}
+
+.mdp-nav {
+  padding: 1em;
+  ul {
+    display: block;
+    li {
+      display: inline-block;
+      padding: 0 1em;
+    }
+  }
+}
+
+.content {
+  img {
+    width: 100%;
+  }
+}

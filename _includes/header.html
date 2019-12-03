@@ -1,0 +1,25 @@
+{% assign projects = site.pages | where: 'type', 'project' %}
+{% assign pages = site.pages | where: 'type', 'page' | sort: 'name' | reverse %}
+{% assign categories = projects | group_by: 'category' | sort: 'name'| reverse %}
+
+<header class="mdp-header">
+  <a href="{{ site.baseurl }}/">
+    <img src="{{ site.baseurl }}/logo.png" alt="{{ site.title | escape }}" width="160" height="160">
+  </a>
+  <nav class="mdp-nav">
+    <ul>
+      {% for item in categories %}
+      <li>
+        <a href="/{{ item.name | slugify: "latin" }}">{{ item.name }}</a>
+      </li>
+      {% endfor %}
+      {% for item in pages %}
+      <li>
+        <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>
+
+
