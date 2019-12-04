@@ -1,2 +1,3 @@
+Sitemap: https://memoriadepapel.com/sitemap.xml
 User-agent: *
 Allow: /
