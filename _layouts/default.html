@@ -4,11 +4,15 @@
   {% include header.html %}
 
   <!-- detail -->
-
   <article class="container">
     <section class="section">
 
-      {% if page.type != 'home' %}
+      {% if page.type == 'home' %}
+        <div class="is-hidden">
+          <h1>{{page.title}}</h1>
+          <p>{{page.subtitle}}</p>
+        </div>
+      {% else %}
         {% include breadcrumb.html %}
         <h1 class="title">{{page.title}}</h1>
       {% endif %}

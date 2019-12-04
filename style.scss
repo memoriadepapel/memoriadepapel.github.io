@@ -12,7 +12,6 @@ $body-background-color: #fafafa;
 
 .mdp-header {
   text-align: center;
-
   border-bottom: 1px solid lightgrey;
   background-color: white;
 
@@ -37,4 +36,8 @@ $body-background-color: #fafafa;
   img {
     width: 100%;
   }
+}
+
+.footer {
+  border-top: 1px solid lightgray;
 }

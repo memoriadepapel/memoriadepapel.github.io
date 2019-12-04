@@ -1,22 +1,22 @@
 <nav class="breadcrumb" aria-label="breadcrumbs">
   <ul>
     <li>
-      <a href="/">Inicio</a>
+      <a href="/" title="Inicio">Inicio</a>
     </li>
 
     {% if page.type == 'project' or page.type == 'page' %}
       {% if page.category.size > 0 %}
       <li>
-        <a href="/{{ page.category | slugify: "latin" }}">{{ page.category }}</a>
+        <a href="/{{ page.category | slugify: "latin" }}" title="{{ page.category }}">{{ page.category }}</a>
       </li>
       {% endif %}
       <li class="is-active">
-        <a href="#" aria-current="page">{{ page.title }}</a>
+        <a href="#" aria-current="page" title="{{ page.title }}">{{ page.title }}</a>
       </li>
     {% else %}
       {% if page.category.size > 0 %}
         <li class="is-active">
-          <a href="#" aria-current="page">{{ page.category }}</a>
+          <a href="#" aria-current="page" title="{{ page.category }}">{{ page.category }}</a>
         </li>
       {% endif %}
     {% endif %}
