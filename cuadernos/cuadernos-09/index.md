@@ -1,9 +1,11 @@
 ---
 layout: default
 type: project
-title: Cuadernos
+title: Cuadernos para recetas
 category: Cuadernos
 ---
+
+- **Tapas:** Plástico reutilizado
 
 ![](01.jpg)
 ![](02.jpg)

@@ -1,10 +1,14 @@
 ---
 layout: default
 type: project
-title: Álbumes
+title: Álbumes de cartón
 category: Álbumes
 home: true
 ---
+
+- **Tapas:** Cartón a la vista.
+- **Páginas:** Decoradas, bolsillos y tarjetas. 
+- **Medidas:** Dos tamaños. 32 x 23 cm. y 22,5 x 17 cm.
 
 ![](01.jpg)
 ![](02.jpg)

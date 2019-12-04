@@ -1,9 +1,13 @@
 ---
 layout: default
 type: project
-title: Álbumes
+title: Álbumes forrados
 category: Álbumes
 ---
+
+- **Tapas:** Forradas con papel decorado scrap.
+- **Páginas:** Decoradas, bolsillos y desplegables.
+- **Medidas:** 32 x 23 cm.
 
 ![](10.jpg)
 ![](11.jpg)

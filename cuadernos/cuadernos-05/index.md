@@ -1,10 +1,14 @@
 ---
 layout: default
 type: project
-title: Cuadernos
+title: Cuaderno de artista
 category: Cuadernos
 home: true
 ---
+
+- **Tapas:** Forradas con lienzo/lona.
+- **Páginas:** Desplegable. 
+- **Medidas:** 17,5 x 26 cm.
 
 ![](01.jpg)
 ![](02.jpg)
