@@ -5,7 +5,8 @@ title: Cuadernos para recetas
 category: Cuadernos
 ---
 
-- **Tapas:** Plástico reutilizado
+- **Tapas:** Plástico reutilizado.
+- **Medidas:** 13,5 x 21 cm.
 
 ![](01.jpg)
 ![](02.jpg)
